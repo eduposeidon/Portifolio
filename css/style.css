@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=News+Cycle:wght@400;700&display=swap');
+
+:root{
+    --cor-fundo: #2C3333;
+    --cor-texto:#CBE4DE;
+    --cor-cabecalho:#2E4F4F;
+    --cor-links:#0E8388;
+}
+*{
+    color: var(--cor-texto);
+    
+}
+body{
+    background-color: var(--cor-fundo);    
+    font-family: 'News Cycle', sans-serif;
+
+}
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px 20px 1px;
+    display: flex;
+    align-items:first baseline;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.cabecalho__texto{
+    font-size: 2em;  
+
+}
+
+.cabecalho__logo{
+    font-family: 'Alex Brush', cursive;
+    font-size: 5rem;
+   
+}
+
+
+.cabecalho__menus a{
+    margin-left: 24px;
+    font-size: 2em;
+}
+.cabecalho__menus a:hover{
+    color: var(--cor-links);
+}
+
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    
+}
+  
+.container h1{
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px;
+    
+ }
+  
+.container__imagem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image{
+    height: 250px;
+    width: 350px;
+    border: 2px solid var(--cor-texto);
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.image img:hover{
+    -webkit-filter: brightness(60%);
+}
+ 
+  
+ .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.1);
+    height:100% ;
+    width: 100%;
+    z-index: 100;
+    display: none;
+ }
+
+ .popup-image span{
+    position: absolute;
+    top: 0; right:10px ;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #CBE4DE;
+    cursor: pointer;
+    z-index: 100;
+ }
+ .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 640px;
+    object-fit: cover;
+ }
+
+ @media (max-width:768px){
+    .container .popup-image img{
+        width: 90%;
+    }
+}

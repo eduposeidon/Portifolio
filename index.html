@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Eduardo</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <p class="cabecalho__texto">Foto Editor Portifolio</p>
+        <p class="cabecalho__logo">Eduardo Souza </p>
+
+        <div class="cabecalho__menus">
+            <a href="index.html">Trabalhos</a>
+            <a href="sobre.html">Sobre</a>
+        </div>    
+    </header>
+
+    <main>
+        <section class="container">
+        <h1 id="titulo-container">Trabalhos</h1>
+            <div class="container__imagem">
+                <div class="image "><img src="/assets/trabalhos/1.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/2.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/3.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/9.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/7.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/8.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/10.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/11.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/12.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/13.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/14.jpg" alt="imagem retocada"></div>
+                <div class="image "><img src="/assets/trabalhos/15.jpg" alt="imagem retocada"></div>
+                
+          </div>
+          <div class="popup-image">
+            <span>&times;</span>
+            <img src="/assets/trabalhos/1.jpg" alt="imagem retocada">
+        </div>
+    </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.container__imagem  img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+                
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>

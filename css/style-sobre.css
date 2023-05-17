@@ -1,0 +1,20 @@
+.sobre h1{
+    font-size: 4em;
+    text-align: center;
+    padding: 60px 140px;
+    font-weight: bold;
+}
+
+.sobre p{
+    font-size: 2em;
+    text-align:justify;
+    padding: 0px 140px;
+    line-height: 1.5em;
+}
+
+.sobre h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 30px 140px;
+    font-weight: bold;
+}
