@@ -18,3 +18,9 @@
     padding: 30px 140px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1020px) {
+    
+    .sobre p{
+        padding: 0 10%;
+        text-align: center;
