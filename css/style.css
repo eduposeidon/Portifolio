@@ -70,8 +70,8 @@ body{
 }
 
 .image{
-    height: 250px;
-    width: 350px;
+    height: auto;
+    width: 30vw;
     border: 2px solid var(--cor-texto);
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
     overflow: hidden;
