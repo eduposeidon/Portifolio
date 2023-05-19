@@ -134,4 +134,8 @@ body{
       .cabecalho__logo{
         padding-bottom: 15px;
       }
+    .image{
+        width: 40vw;
+
+      }
     }
