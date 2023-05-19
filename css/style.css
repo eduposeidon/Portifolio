@@ -124,3 +124,14 @@ body{
         width: 90%;
     }
 }
+
+@media screen and (max-width: 1020px) {
+    .cabecalho__texto {
+      display: none;}
+      .cabecalho {
+        display: block;
+      }
+      .cabecalho__logo{
+        padding-bottom: 15px;
+      }
+    }
